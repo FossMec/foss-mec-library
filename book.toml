@@ -15,6 +15,7 @@ preferred-dark-theme = "navy"
 no-section-label = true
 smart-punctuation = true
 additional-css = ["theme/foss-mec.css"]
+additional-js = ["theme/sidebar-scroll.js"]
 git-repository-url = "https://github.com/FossMec/foss-mec-library"
 edit-url-template = "https://github.com/FossMec/foss-mec-library/edit/main/{path}"
 site-url = "/foss-mec-library/"
