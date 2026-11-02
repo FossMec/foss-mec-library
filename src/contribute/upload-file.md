@@ -132,7 +132,8 @@ In the description include:
   resolves.
 
 Download the one-page [contribution checklist](../assets/materials/templates/contribution-checklist.pdf)
-if you want the requirements beside you while preparing the PR.
+if you want the requirements beside you while preparing the PR. The checklist is an original
+template prepared for this library, not student material.
 
 ## Step 6 — CI and review
 

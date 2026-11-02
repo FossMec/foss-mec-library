@@ -8,6 +8,9 @@ The library is a static [mdBook](https://rust-lang.github.io/mdBook/) site publi
 Pages. It is read-only by design: suggestions and files arrive through GitHub Issues and pull
 requests, are reviewed by a maintainer, and are deployed automatically after merge.
 
+**Status:** the library is new. Academic sections are empty until a real, permission-cleared file is
+accepted. The Git, Linux and workshop pages are starter drafts, not student submissions.
+
 - **Live site:** https://fossmec.github.io/foss-mec-library/
 - **Repository:** https://github.com/FossMec/foss-mec-library
 - **Contributing:** [CONTRIBUTING.md](CONTRIBUTING.md)
@@ -18,7 +21,7 @@ requests, are reviewed by a maintainer, and are deployed automatically after mer
 
 | Section | Contents |
 | --- | --- |
-| Academic Materials | Semester pages with verified, permission-cleared notes and slides |
+| Academic Materials | Semester pages for permission-cleared notes and slides (empty until verified) |
 | Open Learning Resources | Curated free links for Git, Linux, programming and open source |
 | Community Guides | Original guides on Git, GitHub collaboration and the Linux command line |
 | Let's Git It | Workshop quickstart, exercises and a Git cheat sheet |

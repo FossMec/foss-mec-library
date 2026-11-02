@@ -1,5 +1,8 @@
 # Linux Command Line
 
+> **Starter draft.** This page is workshop reference material, not a student submission. Check
+> commands against your distribution's manual pages and improve the page with a pull request.
+
 A short, practical introduction to the commands used in FOSS MEC workshops. It is not a complete
 Linux course; it is enough to navigate a system, edit files, inspect what is running and ask the
 right question.

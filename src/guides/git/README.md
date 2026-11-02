@@ -1,5 +1,8 @@
 # Git Essentials
 
+> **Starter draft.** This page is workshop reference material, not a student submission. Check
+> commands against the official Git documentation and improve the page with a pull request.
+
 Git records the history of a project as a series of snapshots. You decide when to take a
 snapshot, what goes into it, and which line of history it belongs to. This guide covers the
 commands you need for the [Let's Git It workshop](../../workshop/) and for everyday

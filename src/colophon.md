@@ -2,10 +2,19 @@
 
 ## About
 
-**FOSS MEC Library** is a student-built knowledge library from
+**FOSS MEC Library** is a knowledge library from
 [FOSS MEC](https://foss.mec.ac.in), the Free and Open Source Software community at Government
-Model Engineering College, Kochi. It collects original notes, curated open resources and
-community-written guides in one permanent, searchable place.
+Model Engineering College, Kochi. It will collect permission-cleared notes, curated open
+resources and contributor-maintained guides in one permanent, searchable place.
+
+## Provenance
+
+The initial Git, GitHub and Linux guides and the contribution checklist were drafted as workshop
+starting points. They are **not** student submissions and are not attributed to any student. They
+are published so that contributors can correct and improve them. Academic sections remain empty
+until a real, permission-cleared file is accepted through review.
+
+External resources are linked at their canonical source and remain under their own licences.
 
 ## How it is built
 

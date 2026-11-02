@@ -1,6 +1,6 @@
 [book]
 title = "FOSS MEC Library"
-authors = ["FOSS MEC Contributors"]
+authors = ["FOSS MEC"]
 description = "Open notes, study materials, learning resources and community guides from FOSS MEC."
 language = "en"
 src = "src"
