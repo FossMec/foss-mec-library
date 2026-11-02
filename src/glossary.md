@@ -20,6 +20,7 @@ alphabetical order — no new chapter or `SUMMARY.md` change is needed.
 | **Merge conflict** | A state where Git cannot combine two changes automatically because they touch the same lines. |
 | **Origin** | The default name for the remote repository you cloned from, usually your fork. |
 | **Pull request (PR)** | A GitHub request to merge a branch into another branch, with review and automated checks. |
+| **Rebase** | Replaying commits on top of another branch to create a linear history. It rewrites commit hashes, so avoid rebasing shared branches. |
 | **Remote** | A named copy of a repository hosted elsewhere, such as `origin` or `upstream`. |
 | **Repository (repo)** | A project folder tracked by Git, including its history in `.git/`. |
 | **Staging area** | The draft of the next commit; files enter it with `git add`. |
