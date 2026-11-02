@@ -222,3 +222,5 @@ you have a local commit that has not been pushed. Run `git push`.
 
 Continue with [Collaborating on GitHub](collaboration.md) to turn a local branch into a pull
 request. For a printable reminder, open the [Git cheat sheet](../../workshop/cheatsheet.md).
+
+[Test broken local link](definitely-missing-page.md)
