@@ -114,3 +114,6 @@ maintainer can review them before publication.
 
 The source lives at [github.com/FossMec/foss-mec-library](https://github.com/FossMec/foss-mec-library).
 Every page has a **Suggest an edit** pencil in the top bar that opens its exact Markdown file.
+
+Every merged contribution is credited on the [Contributors](contributors.md) page. Names are added
+after a real, reviewed contribution — never as placeholders.

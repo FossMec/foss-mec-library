@@ -202,6 +202,8 @@ the pull request or open an issue with the exact output.
 - Merge with **squash**; delete the branch after merge.
 - Do not merge content with unclear provenance, even if CI passes.
 - After merge, confirm the deploy workflow and the live page.
+- After a person's first merged contribution, add them to `src/contributors.md` with their
+  preferred name and link. Never add placeholder names.
 - Keep `CODEOWNERS` current with real maintainers who have repository access.
 - Use labels `good first issue`, `documentation`, `resource suggestion`, `new guide`,
   `broken link` and `workshop`.

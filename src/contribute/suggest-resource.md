@@ -67,7 +67,7 @@ This is the workshop's direct-PR path and teaches the GitHub flow:
 3. Click the pencil and add one row to the correct table:
 
    ```markdown
-   | [Resource title](https://canonical.example/path) | <span class="fmt fmt-book">Book</span> | One clear sentence about what it teaches. | Author — free, CC BY 4.0 |
+   | [Git reference manual](https://git-scm.com/docs) | <span class="fmt fmt-docs">Docs</span> | Official command reference. | Git project — free |
    ```
 
 4. Commit to a branch such as `resources/add-linux-book`.

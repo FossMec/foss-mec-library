@@ -85,7 +85,7 @@ git reflog                       # find lost commits
 **bold**  *italic*  `inline code`
 
 - list item
-- [link text](https://example.com)
+- [Git reference](https://git-scm.com/docs)
 
 | Column | Column |
 | --- | --- |
@@ -94,7 +94,7 @@ git reflog                       # find lost commits
 > A note or warning.
 
 ```bash
-command --example
+git status
 ```
 ````
 

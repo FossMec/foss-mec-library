@@ -1,8 +1,8 @@
 # Academic Materials
 
-Notes, slides, diagrams and question banks contributed by MEC students, organised by semester
-and subject. Materials are published **only** when the contributor wrote them or has explicit
-permission to redistribute them.
+This section is for notes, slides, diagrams and question banks for MEC courses, organised by
+semester and subject. Materials are published **only** when the contributor wrote them or has
+explicit permission to redistribute them.
 
 ## Browse by semester
 
@@ -10,13 +10,13 @@ permission to redistribute them.
   <a class="card" href="semester-1/">
     <span class="card__kicker">First year</span>
     <span class="card__title">Semester 1</span>
-    <span class="card__text">Foundation courses: mathematics, physics, chemistry and programming basics.</span>
+    <span class="card__text">First-semester material, listed only after a verified contribution.</span>
     <span class="card__arrow">Open semester 1 →</span>
   </a>
   <a class="card" href="semester-2/">
     <span class="card__kicker">First year</span>
     <span class="card__title">Semester 2</span>
-    <span class="card__text">Foundation courses continued, including programming and engineering graphics.</span>
+    <span class="card__text">Second-semester material, listed only after a verified contribution.</span>
     <span class="card__arrow">Open semester 2 →</span>
   </a>
 </div>
@@ -39,26 +39,20 @@ description, the author/credit, the licence or permission note, and a working re
 
 ## Listing format
 
-Use this structure inside a semester or subject page. Keep the table short and readable.
-
-```markdown
-## Data Structures (Semester 3)
-
-| Resource | Format | Description | Credit / licence |
-| --- | --- | --- | --- |
-| [Stacks and queues — lecture notes](LINK_TO_FILE) | PDF | Worked examples and complexity notes | A. Student — CC BY 4.0 |
-```
+Use a Markdown table with four columns: **Resource** (a relative link), **Format**
+(Notes/PDF/Slides), **Description** (one line) and **Credit / licence** (author and permission).
+Do not publish a row until the file and permission are verified.
 
 Place the file at:
 
 ```text
-src/assets/materials/<semester>/<subject>/<descriptive-name>.pdf
+src/assets/materials/<semester>/<subject>/<descriptive-name>.<ext>
 ```
 
-Then link it from the page with a path **relative to the Markdown file**, for example:
+Then link it from the page with a path **relative to the Markdown file**:
 
 ```markdown
-[Stacks and queues — lecture notes](../../assets/materials/semester-3/data-structures/stacks-and-queues.pdf)
+[descriptive title](../../assets/materials/<semester>/<subject>/<descriptive-name>.<ext>)
 ```
 
 Do not use a leading `/assets/...` path: the site is published under

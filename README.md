@@ -14,6 +14,7 @@ accepted. The Git, Linux and workshop pages are starter drafts, not student subm
 - **Live site:** https://fossmec.github.io/foss-mec-library/
 - **Repository:** https://github.com/FossMec/foss-mec-library
 - **Contributing:** [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Contributors:** https://fossmec.github.io/foss-mec-library/contributors.html
 - **Code of conduct:** [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - **Content licence:** [CC BY 4.0](LICENSE-CONTENT.md); code and theme overrides are MIT.
 

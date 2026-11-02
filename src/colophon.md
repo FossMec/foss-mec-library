@@ -33,8 +33,11 @@ The visual language follows the FOSS MEC website theme:
 - the official FOSS MEC logo;
 - Martian Mono for display type, Uncut Sans for body text and DM Mono for code.
 
-Only `theme/foss-mec.css`, `theme/header.hbs` and `theme/head.hbs` override mdBook's defaults.
-Navigation, search, keyboard shortcuts and theme switching remain mdBook's built-in behaviour.
+The theme menu includes **Light, Rust, Material, Nord, Everforest, Pine, Coal, Navy and Ayu**.
+Navy is the default dark theme; the others are alternate palettes for reader preference. Only
+`theme/foss-mec.css`, `theme/index.hbs`, `theme/header.hbs` and `theme/head.hbs` override mdBook's
+defaults. Navigation, search, keyboard shortcuts and theme persistence remain mdBook's built-in
+behaviour.
 
 ## Licensing
 
@@ -44,6 +47,12 @@ Navigation, search, keyboard shortcuts and theme switching remain mdBook's built
 - **Fonts:** SIL Open Font License 1.1; see
   [FONT-LICENSES.md](https://github.com/FossMec/foss-mec-library/blob/main/src/assets/fonts/FONT-LICENSES.md).
 - **External resources:** remain under their own licences and are linked, not mirrored.
+
+## Contributors
+
+The curated list of people who have contributed to this library is on the
+[Contributors](contributors.md) page. It is updated after a contribution is merged and contains no
+placeholder names.
 
 ## Contact
 

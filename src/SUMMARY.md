@@ -40,4 +40,5 @@
 ---
 
 [Glossary](glossary.md)
+[Contributors](contributors.md)
 [Colophon](colophon.md)
