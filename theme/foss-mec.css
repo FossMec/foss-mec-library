@@ -1,0 +1,707 @@
+/* FOSS MEC Library — brand overrides for mdBook.
+   Palette, logo and typography follow the FOSS MEC website theme:
+   navy #0C2444, paper #F2F7FC, accent #FFD022, logo gradient #FDCE21 → #F69D1D.
+   Only mdBook CSS variables and small component styles are overridden. */
+
+@font-face {
+  font-family: "Uncut Sans";
+  src: url("../assets/fonts/UncutSans-Variable.ttf") format("truetype-variations");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Martian Mono";
+  src: url("../assets/fonts/MartianMono-Variable.ttf") format("truetype-variations");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url("../assets/fonts/DMMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --content-max-width: 900px;
+  --page-padding: 22px;
+  --foss-navy: #0c2444;
+  --foss-navy-deep: #081a31;
+  --foss-paper: #f2f7fc;
+  --foss-yellow: #ffd022;
+  --foss-amber: #f69d1d;
+  --foss-radius: 12px;
+  --foss-border: #dbe4ef;
+  --foss-muted: #55708f;
+  --foss-body: "Uncut Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --foss-display: "Martian Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --foss-mono: "DM Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+
+/* ---------- Light themes ---------- */
+
+.light,
+.rust,
+html:not(.js) {
+  --bg: #ffffff;
+  --fg: #14294a;
+
+  --sidebar-bg: var(--foss-navy);
+  --sidebar-fg: #d9e6f5;
+  --sidebar-non-existant: #8fa6c0;
+  --sidebar-active: var(--foss-yellow);
+  --sidebar-spacer: rgba(255, 255, 255, 0.09);
+
+  --scrollbar: #8fa6c0;
+  --icons: #4a6280;
+  --icons-hover: var(--foss-navy);
+  --links: #0c4f8a;
+  --inline-code-color: #8a3b0c;
+
+  --theme-popup-bg: #ffffff;
+  --theme-popup-border: var(--foss-border);
+  --theme-hover: #eef3f8;
+
+  --quote-bg: #f4f8fc;
+  --quote-border: #d8e4f0;
+  --warning-border: #b45309;
+
+  --table-border-color: var(--foss-border);
+  --table-header-bg: #edf3f9;
+  --table-alternate-bg: #f8fafc;
+
+  --searchbar-border-color: #b9cadd;
+  --searchbar-bg: #ffffff;
+  --searchbar-fg: #14294a;
+  --searchbar-shadow-color: #b9cadd;
+  --searchresults-header-fg: #55708f;
+  --searchresults-border-color: var(--foss-border);
+  --searchresults-li-bg: #f5f9fd;
+  --search-mark-bg: #ffe38a;
+
+  --color-scheme: light;
+  --overlay-bg: rgba(12, 36, 68, 0.4);
+  --footnote-highlight: #b45309;
+  --sidebar-header-border-color: var(--foss-yellow);
+}
+
+/* ---------- Dark themes ---------- */
+
+.navy,
+.coal,
+.ayu {
+  --bg: var(--foss-navy);
+  --fg: var(--foss-paper);
+
+  --sidebar-bg: var(--foss-navy-deep);
+  --sidebar-fg: #cfe0f2;
+  --sidebar-non-existant: #7e97b3;
+  --sidebar-active: var(--foss-yellow);
+  --sidebar-spacer: rgba(255, 255, 255, 0.08);
+
+  --scrollbar: #5f7d9e;
+  --icons: #a9c0d8;
+  --icons-hover: var(--foss-yellow);
+  --links: var(--foss-yellow);
+  --inline-code-color: #ffd98a;
+
+  --theme-popup-bg: #102c52;
+  --theme-popup-border: rgba(255, 255, 255, 0.18);
+  --theme-hover: #173a66;
+
+  --quote-bg: rgba(255, 255, 255, 0.055);
+  --quote-border: rgba(255, 255, 255, 0.14);
+  --warning-border: var(--foss-yellow);
+
+  --table-border-color: rgba(255, 255, 255, 0.16);
+  --table-header-bg: rgba(255, 255, 255, 0.08);
+  --table-alternate-bg: rgba(255, 255, 255, 0.035);
+
+  --searchbar-border-color: rgba(255, 255, 255, 0.24);
+  --searchbar-bg: #102c52;
+  --searchbar-fg: var(--foss-paper);
+  --searchbar-shadow-color: rgba(0, 0, 0, 0.35);
+  --searchresults-header-fg: #a9c0d8;
+  --searchresults-border-color: rgba(255, 255, 255, 0.16);
+  --searchresults-li-bg: rgba(255, 255, 255, 0.045);
+  --search-mark-bg: #9a6f00;
+
+  --color-scheme: dark;
+  --overlay-bg: rgba(0, 0, 0, 0.55);
+  --footnote-highlight: var(--foss-yellow);
+  --sidebar-header-border-color: var(--foss-yellow);
+}
+
+/* ---------- Base typography ---------- */
+
+body,
+.content {
+  font-family: var(--foss-body);
+  font-size: 1.7rem;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+.menu-title,
+.sidebar .chapter li a,
+.sidebar .part-title {
+  font-family: var(--foss-display);
+  font-weight: 650;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  line-height: 1.25;
+}
+
+h2 {
+  margin-top: 2.2em;
+  padding-bottom: 0.35em;
+  border-bottom: 2px solid var(--sidebar-active);
+  line-height: 1.35;
+}
+
+h3 {
+  line-height: 1.4;
+}
+
+code,
+kbd,
+pre {
+  font-family: var(--foss-mono);
+}
+
+code {
+  padding: 0.12em 0.32em;
+  border-radius: 4px;
+  background: var(--quote-bg);
+  border: 1px solid var(--table-border-color);
+}
+
+pre code {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--foss-yellow);
+  outline-offset: 2px;
+}
+
+.content a {
+  text-decoration-color: var(--foss-amber);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.content a:hover {
+  text-decoration-thickness: 3px;
+}
+
+/* ---------- Brand bar (theme/header.hbs) ---------- */
+
+/* mdBook pulls .page up by the menu-bar height to compensate for its hover
+   placeholder. The brand bar is real content above the menu, so remove that
+   offset and the now-redundant placeholder. The menu bar remains sticky. */
+.page {
+  margin-block-start: 0;
+}
+
+#mdbook-menu-bar-hover-placeholder {
+  display: none;
+}
+
+.foss-brandbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 44px;
+  margin: 0 calc(0px - var(--page-padding));
+  padding: 5px var(--page-padding);
+  background: var(--foss-navy-deep);
+  color: var(--foss-paper);
+  font-family: var(--foss-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+.foss-brandbar a {
+  color: var(--foss-paper);
+  text-decoration: none;
+}
+
+.foss-brandbar a:hover {
+  color: var(--foss-yellow);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.foss-brandbar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.foss-brandbar__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 3px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.foss-brandbar__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.foss-brandbar__divider {
+  color: var(--foss-yellow);
+  margin: 0 2px;
+}
+
+.foss-brandbar__links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.foss-brandbar__cta {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--foss-yellow);
+  color: var(--foss-navy) !important;
+  font-weight: 700;
+}
+
+.foss-brandbar__cta:hover {
+  background: #ffe266;
+  color: var(--foss-navy) !important;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .foss-brandbar__links a:not(.foss-brandbar__cta) {
+    display: none;
+  }
+
+  .foss-brandbar {
+    font-size: 1.05rem;
+  }
+}
+
+/* ---------- Home page components ---------- */
+
+.hero {
+  position: relative;
+  margin: 1.5rem 0 2.5rem;
+  padding: clamp(1.6rem, 5vw, 3.2rem);
+  border-radius: var(--foss-radius);
+  background: var(--foss-navy);
+  color: var(--foss-paper);
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -120px -170px auto;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 208, 34, 0.22), transparent 68%);
+  pointer-events: none;
+}
+
+.hero a {
+  color: var(--foss-yellow);
+}
+
+.hero__logo-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  margin-bottom: 1.2rem;
+  padding: 12px;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.hero__logo-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__eyebrow {
+  margin: 0 0 0.5rem;
+  font-family: var(--foss-display);
+  font-size: 1.1rem;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--foss-yellow);
+}
+
+.hero h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2.7rem, 6vw, 4.4rem);
+  color: #ffffff;
+}
+
+.hero__lede {
+  max-width: 58ch;
+  margin: 0 0 1.6rem;
+  font-size: clamp(1.6rem, 2.6vw, 1.9rem);
+  color: #dbe8f6;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.button {
+  display: inline-block;
+  padding: 9px 16px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  font-family: var(--foss-display);
+  font-size: 1.25rem;
+  font-weight: 650;
+  text-decoration: none !important;
+  transition: transform 0.12s ease, background-color 0.12s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button--primary {
+  background: var(--foss-yellow);
+  color: var(--foss-navy) !important;
+}
+
+.button--primary:hover {
+  background: #ffe266;
+}
+
+.button--ghost {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: var(--foss-paper) !important;
+}
+
+.button--ghost:hover {
+  border-color: var(--foss-yellow);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.eyebrow {
+  margin: 2.4rem 0 0.4rem;
+  font-family: var(--foss-display);
+  font-size: 1.1rem;
+  font-weight: 650;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--foss-muted);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+  margin: 1rem 0 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid var(--foss-border);
+  border-radius: var(--foss-radius);
+  background: var(--bg);
+  text-decoration: none !important;
+  color: var(--fg) !important;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--foss-amber);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(12, 36, 68, 0.09);
+}
+
+.card__kicker {
+  font-family: var(--foss-display);
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--foss-muted);
+}
+
+.card__title {
+  margin: 6px 0 6px;
+  font-family: var(--foss-display);
+  font-size: 1.65rem;
+  font-weight: 650;
+  line-height: 1.35;
+  color: var(--fg);
+}
+
+.card__text {
+  margin: 0;
+  color: var(--fg);
+  opacity: 0.86;
+}
+
+.card__arrow {
+  margin-top: auto;
+  padding-top: 12px;
+  font-family: var(--foss-display);
+  font-size: 1.15rem;
+  font-weight: 650;
+  color: var(--links);
+}
+
+.navy .card,
+.coal .card,
+.ayu .card {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.navy .card:hover,
+.coal .card:hover,
+.ayu .card:hover {
+  border-color: var(--foss-yellow);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.navy .eyebrow,
+.coal .eyebrow,
+.ayu .eyebrow {
+  color: #a9c0d8;
+}
+
+/* ---------- Resource labels and tables ---------- */
+
+.fmt {
+  display: inline-block;
+  padding: 1px 7px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-family: var(--foss-display);
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.fmt-notes { color: #0c6b46; }
+.fmt-pdf { color: #b42318; }
+.fmt-slides { color: #b45309; }
+.fmt-docs { color: #0c4f8a; }
+.fmt-book { color: #6d28d9; }
+.fmt-video { color: #b91c5c; }
+.fmt-repo { color: #334155; }
+.fmt-course { color: #0f766e; }
+.fmt-tool { color: #475569; }
+.fmt-practice { color: #9a3412; }
+.fmt-game { color: #7e22ce; }
+.fmt-event { color: #a16207; }
+
+.navy .fmt-notes, .coal .fmt-notes, .ayu .fmt-notes { color: #6ee7b7; }
+.navy .fmt-pdf, .coal .fmt-pdf, .ayu .fmt-pdf { color: #fca5a5; }
+.navy .fmt-slides, .coal .fmt-slides, .ayu .fmt-slides { color: #fcd34d; }
+.navy .fmt-docs, .coal .fmt-docs, .ayu .fmt-docs { color: #93c5fd; }
+.navy .fmt-book, .coal .fmt-book, .ayu .fmt-book { color: #c4b5fd; }
+.navy .fmt-video, .coal .fmt-video, .ayu .fmt-video { color: #f9a8d4; }
+.navy .fmt-repo, .coal .fmt-repo, .ayu .fmt-repo { color: #cbd5e1; }
+.navy .fmt-course, .coal .fmt-course, .ayu .fmt-course { color: #5eead4; }
+.navy .fmt-tool, .coal .fmt-tool, .ayu .fmt-tool { color: #cbd5e1; }
+.navy .fmt-practice, .coal .fmt-practice, .ayu .fmt-practice { color: #fdba74; }
+.navy .fmt-game, .coal .fmt-game, .ayu .fmt-game { color: #d8b4fe; }
+.navy .fmt-event, .coal .fmt-event, .ayu .fmt-event { color: #fde047; }
+
+table {
+  font-size: 1.5rem;
+}
+
+table th {
+  font-family: var(--foss-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---------- Callouts and contribution bands ---------- */
+
+.contribute-band {
+  margin: 2.2rem 0;
+  padding: 18px 20px;
+  border: 1px solid var(--foss-border);
+  border-left: 5px solid var(--foss-amber);
+  border-radius: 8px;
+  background: var(--quote-bg);
+}
+
+.contribute-band p {
+  margin: 0.35rem 0;
+}
+
+.navy .contribute-band,
+.coal .contribute-band,
+.ayu .contribute-band {
+  border-color: rgba(255, 255, 255, 0.16);
+  border-left-color: var(--foss-yellow);
+}
+
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+}
+
+.steps > li {
+  position: relative;
+  margin: 0 0 1rem;
+  padding-left: 42px;
+  min-height: 28px;
+}
+
+.steps > li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--foss-yellow);
+  color: var(--foss-navy);
+  font-family: var(--foss-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.small-note {
+  font-size: 1.4rem;
+  color: var(--foss-muted);
+}
+
+.navy .small-note,
+.coal .small-note,
+.ayu .small-note {
+  color: #a9c0d8;
+}
+
+/* ---------- Sidebar polish ---------- */
+
+.sidebar {
+  font-family: var(--foss-body);
+}
+
+.sidebar .chapter li a {
+  font-size: 1.38rem;
+  line-height: 1.5;
+  padding: 5px 0;
+}
+
+.sidebar .chapter li.chapter-item {
+  margin-top: 0.3em;
+}
+
+.sidebar .chapter li a.active {
+  font-weight: 650;
+}
+
+.sidebar .part-title {
+  margin-top: 1.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foss-yellow);
+  opacity: 1;
+}
+
+/* ---------- Menu bar ---------- */
+
+#mdbook-menu-bar {
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+.menu-title {
+  font-size: 1.55rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.navy .menu-title,
+.coal .menu-title,
+.ayu .menu-title {
+  color: var(--foss-paper);
+}
+
+/* ---------- 404 ---------- */
+
+.not-found {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: clamp(4rem, 12vw, 8rem);
+  margin: 0;
+  color: var(--links);
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+  .foss-brandbar,
+  .hero__actions,
+  .button,
+  #mdbook-menu-bar,
+  #mdbook-sidebar {
+    display: none !important;
+  }
+
+  .hero {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #cccccc;
+  }
+
+  .hero h1,
+  .hero__lede,
+  .hero__eyebrow {
+    color: #000000 !important;
+  }
+}

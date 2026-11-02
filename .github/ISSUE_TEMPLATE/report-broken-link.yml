@@ -1,0 +1,68 @@
+name: Report a broken link
+description: Report a dead, redirected, paywalled or wrongly described resource.
+title: "[Broken link]: "
+labels: ["broken link", "needs review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please identify the exact page and link. Do not include passwords, personal data or
+        screenshots containing other people's information.
+
+  - type: input
+    id: page
+    attributes:
+      label: Library page
+      description: The page on fossmec.github.io where you found the link.
+      placeholder: "https://fossmec.github.io/foss-mec-library/resources/git.html"
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Broken link
+      description: The URL that does not work.
+      placeholder: "https://example.com/broken-resource"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What happens?
+      options:
+        - 404 or "page not found"
+        - Redirects to an unrelated page
+        - Requires payment or an account
+        - Content is outdated or wrong
+        - Link is not the canonical source
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Expected and actual behaviour
+      description: What did you expect, and what happened instead? Include the date checked if the site is intermittent.
+    validations:
+      required: true
+
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement
+      description: Optional — a canonical, free replacement URL and its source.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I checked the link in a private browser window and it still fails.
+          required: false
+        - label: This report contains no personal or confidential information.
+          required: true

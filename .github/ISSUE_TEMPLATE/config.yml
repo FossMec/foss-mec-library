@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution guide
+    url: https://fossmec.github.io/foss-mec-library/contribute/
+    about: Four contribution paths, with browser-only instructions for each.
+  - name: Let's Git It quickstart
+    url: https://fossmec.github.io/foss-mec-library/workshop/quickstart.html
+    about: Open your first pull request in about 15 minutes.
+  - name: FOSS MEC
+    url: https://foss.mec.ac.in
+    about: Community website and contact details.

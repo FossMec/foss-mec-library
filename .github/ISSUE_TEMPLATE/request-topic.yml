@@ -1,0 +1,69 @@
+name: Request a topic
+description: Ask for a new course, subject or guide in the library.
+title: "[Topic]: "
+labels: ["new guide", "needs review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a topic, not to upload copyrighted material. If you can write
+        part of the page yourself, say so — contributions are welcome.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Requested course or topic
+      placeholder: "Semester 3 — Data Structures — trees and graph traversal"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Academic Materials
+        - Open Learning Resources
+        - Community Guides
+        - Let's Git It workshop
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Suggested outline
+      description: Which questions should the page answer? List a few headings or learning outcomes.
+      placeholder: |
+        - Binary tree terminology
+        - Depth-first vs breadth-first traversal
+        - Worked examples and complexity
+    validations:
+      required: true
+
+  - type: input
+    id: references
+    attributes:
+      label: Free references
+      description: Optional — official or openly licensed sources that could support the page.
+    validations:
+      required: false
+
+  - type: textarea
+    id: contribute
+    attributes:
+      label: Can you contribute?
+      description: Would you like to write the page, review it, or only request it?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I understand the library does not host copyrighted textbooks or leaked exam papers.
+          required: true
+        - label: This request is for a legitimate academic or community learning topic.
+          required: true
