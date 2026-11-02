@@ -4,14 +4,20 @@
   </div>
   <p class="hero__eyebrow">FOSS MEC · Model Engineering College</p>
   <h1>Open notes. Open source. Open to everyone.</h1>
-  <p class="hero__lede">A permanent, student-built knowledge library for MEC: verified study material,
-  hand-picked open resources, and practical guides written by the FOSS MEC community.</p>
+  <p class="hero__lede">A permanent knowledge library for MEC: permission-cleared study material,
+  verified open resources, and starter guides maintained by FOSS MEC.</p>
   <div class="hero__actions">
     <a class="button button--primary" href="academics/">Browse notes</a>
     <a class="button button--ghost" href="resources/">Explore open resources</a>
     <a class="button button--ghost" href="guides/">Read guides</a>
     <a class="button button--ghost" href="https://github.com/FossMec/foss-mec-library/issues/new?template=suggest-resource.yml">Suggest a resource</a>
   </div>
+</div>
+
+<div class="contribute-band">
+  <p><strong>Status:</strong> this library is new. The academic sections show an honest empty state
+  until verified, permission-cleared material is accepted. The Git, Linux and workshop pages are
+  starter drafts, not student submissions, and are open to correction.</p>
 </div>
 
 <p class="eyebrow">Start here</p>
@@ -32,7 +38,7 @@
   <a class="card" href="guides/">
     <span class="card__kicker">Learn</span>
     <span class="card__title">Community guides</span>
-    <span class="card__text">Original, practical guides written by MEC students and FOSS MEC contributors.</span>
+    <span class="card__text">Starter guides on Git, GitHub and Linux, maintained in this repository.</span>
     <span class="card__arrow">Read the guides →</span>
   </a>
   <a class="card" href="workshop/">

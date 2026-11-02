@@ -1,7 +1,8 @@
 # Semester 2
 
-Second semester of the first year at MEC. Course codes and syllabus change with the university
-scheme; confirm the current list with your department.
+This is the Semester 2 index. The university scheme decides the course codes and syllabus; confirm
+them with your department. No subject list is published here until verified material for that
+subject is accepted.
 
 ## Published materials
 
@@ -14,17 +15,15 @@ summary, lab record or problem set yourself, it can be published here with credi
 - [Upload a PDF or slide deck](../../contribute/upload-file.md)
 - [Suggest an open resource](../../contribute/suggest-resource.md)
 
-## What this page will list
+## How material will be listed
 
-| Subject area | Typical material |
-| --- | --- |
-| Mathematics II | Series, multivariable calculus, differential equations |
-| Physics / Chemistry continuation | Concept maps, solved problems, lab write-ups |
-| Programming | Original exercises and annotated programs |
-| Engineering graphics | Diagrams and drawing checklists created by you |
-| Design / workshop | Process notes and safety checklists |
+When a verified contribution arrives, this page will name the actual subject and list the file with
+a format label, a short description, the author/credit and the licence or permission note.
 
-## Free references until then
+## Open references (not course material)
+
+These are external, openly licensed resources. They are not MEC notes and may not match your
+current syllabus.
 
 | Resource | Format | Why it helps | Access |
 | --- | --- | --- | --- |

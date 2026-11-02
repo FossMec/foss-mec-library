@@ -1,5 +1,8 @@
 # Collaborating on GitHub
 
+> **Starter draft.** This page is workshop reference material, not a student submission. Check
+> current GitHub documentation and improve the page with a pull request.
+
 Git tracks history on your machine. GitHub adds a shared home for that history, issues for
 discussion, and pull requests for review. This guide follows the fork-and-pull-request workflow
 used by the FOSS MEC Library.

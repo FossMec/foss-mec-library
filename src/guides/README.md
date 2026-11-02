@@ -1,7 +1,8 @@
 # Community Guides
 
-Original, practical guides written by FOSS MEC contributors. Unlike the
-[resource directory](../resources/), these pages are maintained here: if something is
+**Starter guides** maintained in this repository. They were drafted as workshop reference material,
+**not student submissions**, and are expected to be corrected and expanded by contributors.
+Unlike the [resource directory](../resources/), these pages are maintained here: if something is
 unclear or wrong, you can fix it with a pull request.
 
 ## Available guides
@@ -29,7 +30,8 @@ unclear or wrong, you can fix it with a pull request.
 
 ## Write a guide
 
-Good guides come from problems you actually solved. A useful contribution:
+These pages are a starting point, not a finished curriculum. Good guides come from problems you
+actually solved. A useful contribution:
 
 - targets one reader and one outcome;
 - uses short sections with runnable examples;

@@ -1,8 +1,8 @@
 # Semester 1
 
-First-year foundation courses at MEC. The exact course codes and syllabus are set by the
-university scheme in force for your admission year — verify them with your department before
-relying on a subject name here.
+This is the Semester 1 index. The university scheme in force for your admission year decides the
+course codes and syllabus — verify them with your department. No subject list is published here
+until verified material for that subject is accepted.
 
 ## Published materials
 
@@ -17,21 +17,11 @@ Be the first contributor:
 - [Upload a PDF or slide deck](../../contribute/upload-file.md)
 - [Suggest an open resource](../../contribute/suggest-resource.md)
 
-## What this page will list
+## How material will be listed
 
-When material arrives, it will be grouped by subject area, for example:
-
-| Subject area | Typical material |
-| --- | --- |
-| Mathematics I | Derivations, worked problem sets, formula summaries |
-| Physics | Lab notes, concept summaries, solved numericals |
-| Chemistry | Reaction summaries, lab records written by you |
-| Programming basics | Original tutorials, exercises and annotated examples |
-| Engineering graphics / workshop | Diagrams you created, process checklists |
-| Communication skills | Presentation tips, original writing samples |
-
-Every entry will carry a format label, a short description, the author/credit and the licence or
-permission note.
+When a verified contribution arrives, this page will name the actual subject and list the file with
+a format label, a short description, the author/credit and the licence or permission note. Nothing
+is listed before that review happens.
 
 ## Free references until then
 

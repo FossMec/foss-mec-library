@@ -25,9 +25,9 @@ take you from navigating directories to reading manual pages and writing small s
 
 ## Local practice
 
-The [Linux Command Line guide](../guides/linux/) in this library is a short original
-walkthrough of the commands you need for workshops. For deeper practice, install a Linux
-distribution in a virtual machine or use Windows Subsystem for Linux.
+The [Linux Command Line guide](../guides/linux/) in this library is a short starter walkthrough of
+the commands you need for workshops; it is not a student submission. For deeper practice, install a
+Linux distribution in a virtual machine or use Windows Subsystem for Linux.
 
 <div class="contribute-band">
   <p><strong>Know a free Linux resource written for students?</strong> Suggest it with a short
