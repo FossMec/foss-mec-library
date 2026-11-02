@@ -1,3 +1,45 @@
+<script>
+  /*
+   * Apply the saved theme before the stylesheets load. mdBook's own theme
+   * script runs near the end of the body, which can flash the static default
+   * theme on navigation. This keeps the selected theme stable across pages.
+   * "Auto" is intentionally not offered: the default is always FOSS MEC Navy.
+   */
+  (function () {
+    var themes = [
+      "light",
+      "rust",
+      "material",
+      "nord",
+      "everforest",
+      "pine",
+      "coal",
+      "navy",
+      "ayu"
+    ];
+
+    function applySavedTheme() {
+      try {
+        var saved = window.localStorage.getItem("mdbook-theme");
+        if (!saved) return;
+        saved = saved.replace(/^"|"$/g, "");
+        if (themes.indexOf(saved) === -1) return;
+        var html = document.documentElement;
+        themes.forEach(function (name) {
+          html.classList.remove(name);
+        });
+        html.classList.add(saved);
+      } catch (error) {
+        /* localStorage can be unavailable; keep the static FOSS MEC default */
+      }
+    }
+
+    applySavedTheme();
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted) applySavedTheme();
+    });
+  })();
+</script>
 <meta name="theme-color" content="#0c2444">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FOSS MEC Library">

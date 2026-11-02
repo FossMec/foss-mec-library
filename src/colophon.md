@@ -34,7 +34,8 @@ The visual language follows the FOSS MEC website theme:
 - Martian Mono for display type, Uncut Sans for body text and DM Mono for code.
 
 The theme menu includes **Light, Rust, Material, Nord, Everforest, Pine, Coal, Navy and Ayu**.
-Navy is the default dark theme; the others are alternate palettes for reader preference. Only
+**Navy is the default theme** and the site does not switch automatically; the others are alternate
+palettes chosen explicitly from the picker. Only
 `theme/foss-mec.css`, `theme/index.hbs`, `theme/header.hbs` and `theme/head.hbs` override mdBook's
 defaults. Navigation, search, keyboard shortcuts and theme persistence remain mdBook's built-in
 behaviour.
