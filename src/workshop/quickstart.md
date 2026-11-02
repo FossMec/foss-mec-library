@@ -39,7 +39,7 @@ Read the page first. The change must be true, useful and in your own words.
 3. Make the change. Keep Markdown formatting intact:
 
    ```markdown
-   | [Resource title](https://example.com) | <span class="fmt fmt-docs">Docs</span> | One clear sentence. | Source — free |
+   | [Git reference manual](https://git-scm.com/docs) | <span class="fmt fmt-docs">Docs</span> | Official command reference. | Git project — free |
    ```
 
 4. Scroll down to **Commit changes**.

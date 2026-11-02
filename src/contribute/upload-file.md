@@ -30,13 +30,14 @@ executables, archives, password-protected files or anything you do not have the 
 | Location | `src/assets/materials/<semester>/<subject>/` |
 | Licence | State it in the listing and the pull request |
 
-Examples:
+The pattern is:
 
 ```text
-src/assets/materials/semester-1/mathematics-1/limits-worked-examples.pdf
-src/assets/materials/semester-2/programming/python-loops-slides.pdf
-src/assets/materials/semester-1/physics/lab-record-template.docx
+src/assets/materials/<semester>/<subject>/<descriptive-name>.<ext>
 ```
+
+Use the real semester, subject and descriptive name for your file. Do not copy an example subject
+from another contribution.
 
 Version a file with a suffix only when both versions are genuinely useful:
 `notes-v2.pdf`. Do not keep near-duplicate copies.
@@ -51,20 +52,20 @@ before starting.
 
 GitHub cannot create an empty folder, so navigate to the intended parent and use
 **Add file → Create new file**. In the filename box type the full path, including the new folder
-name and a temporary `.md` file, for example:
+name and a temporary `.md` file. Replace each `<...>` field with your real semester and subject:
 
 ```text
-src/assets/materials/semester-1/engineering-graphics/README.md
+src/assets/materials/<semester>/<subject>/README.md
 ```
 
 Put a single line in the file:
 
 ```markdown
-# Engineering graphics — Semester 1
+# <Subject> — Semester <number>
 ```
 
-Commit it to a new branch such as `materials/semester-1-engineering-graphics`. The folder now
-exists in your branch.
+Commit it to a new branch such as `materials/<semester>-<subject>`. The folder now exists in your
+branch.
 
 > Why a README? It gives the folder a human-readable subject title and keeps the repository
 > navigable. It is not added to `SUMMARY.md`, so it is not a website chapter.
@@ -78,7 +79,7 @@ exists in your branch.
 5. Write a commit message:
 
    ```text
-   materials: add semester 1 engineering graphics notes
+   materials: add <subject> notes
    ```
 
 6. Commit directly to your branch.
@@ -91,19 +92,20 @@ A file becomes discoverable only when a Markdown index describes it. Open the re
 page, for example `src/academics/semester-1/README.md`, click the pencil, and add an entry:
 
 ```markdown
-## Engineering graphics
-
 | Resource | Format | Description | Credit / licence |
 | --- | --- | --- | --- |
-| [Orthographic projection notes](LINK) | <span class="fmt fmt-pdf">PDF</span> | Worked examples for first-angle projection, including common mistakes | Your Name — CC BY 4.0 |
+| [<descriptive title>](<relative-path>.<ext>) | <span class="fmt fmt-pdf">PDF</span> | <one line about the subject and topic> | <author> — <licence or permission> |
 ```
 
-Replace `LINK` with the path **relative to that Markdown file**. From
-`src/academics/semester-1/README.md` to
-`src/assets/materials/semester-1/engineering-graphics/orthographic-projection.pdf`:
+Replace every `<...>` field with real information. Do not publish a row until the file and the
+permission are verified.
+
+The resource link must be **relative to that Markdown file**. For a page at
+`src/academics/semester-1/README.md`, a file at
+`src/assets/materials/semester-1/<subject>/<descriptive-name>.<ext>` is linked as:
 
 ```markdown
-[Orthographic projection notes](../../assets/materials/semester-1/engineering-graphics/orthographic-projection.pdf)
+[<descriptive title>](../../assets/materials/semester-1/<subject>/<descriptive-name>.<ext>)
 ```
 
 The link must start with `../../`, not `/assets/`. Test it after the build deploys.
@@ -122,7 +124,7 @@ Commit the listing change, then open a pull request against `FossMec/foss-mec-li
 In the description include:
 
 - **File:** the path you added.
-- **Subject and semester:** for example, Semester 1 Engineering Graphics.
+- **Subject and semester:** the actual subject and semester, not an example.
 - **Author:** the person who created the file.
 - **Permission:** "I wrote this file" or "I have written permission from the author; attached in
   this thread."

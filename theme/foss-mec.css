@@ -46,7 +46,6 @@
 /* ---------- Light themes ---------- */
 
 .light,
-.rust,
 html:not(.js) {
   --bg: #ffffff;
   --fg: #14294a;
@@ -90,51 +89,225 @@ html:not(.js) {
   --sidebar-header-border-color: var(--foss-yellow);
 }
 
+/* Rust — warm paper, rust accents */
+.rust {
+  --bg: #fbf3e4;
+  --fg: #3b2f2f;
+  --sidebar-bg: #4a3428;
+  --sidebar-fg: #f5e6d3;
+  --sidebar-non-existant: #b99d84;
+  --sidebar-active: #ffb86b;
+  --sidebar-spacer: rgba(255, 255, 255, 0.1);
+  --scrollbar: #b99d84;
+  --icons: #7a5b47;
+  --icons-hover: #4a3428;
+  --links: #9a3e1f;
+  --inline-code-color: #8a3b0c;
+  --theme-popup-bg: #fff8ec;
+  --theme-popup-border: #e4d2b8;
+  --theme-hover: #f3e6d2;
+  --quote-bg: #f8edda;
+  --quote-border: #e4d2b8;
+  --warning-border: #b45309;
+  --table-border-color: #e4d2b8;
+  --table-header-bg: #f3e6d2;
+  --table-alternate-bg: #fdf7ee;
+  --searchbar-border-color: #d8c3a5;
+  --searchbar-bg: #fffdf8;
+  --searchbar-fg: #3b2f2f;
+  --searchbar-shadow-color: #d8c3a5;
+  --searchresults-header-fg: #7a5b47;
+  --searchresults-border-color: #e4d2b8;
+  --searchresults-li-bg: #f8edda;
+  --search-mark-bg: #ffd28a;
+  --color-scheme: light;
+  --overlay-bg: rgba(74, 52, 40, 0.4);
+  --footnote-highlight: #9a3e1f;
+  --sidebar-header-border-color: #ffb86b;
+}
+
+/* Material — light surfaces, indigo and amber */
+.material {
+  --bg: #fafafa;
+  --fg: #212121;
+  --sidebar-bg: #263238;
+  --sidebar-fg: #eceff1;
+  --sidebar-non-existant: #90a4ae;
+  --sidebar-active: #ffca28;
+  --sidebar-spacer: rgba(255, 255, 255, 0.1);
+  --scrollbar: #90a4ae;
+  --icons: #546e7a;
+  --icons-hover: #263238;
+  --links: #3f51b5;
+  --inline-code-color: #c2185b;
+  --theme-popup-bg: #ffffff;
+  --theme-popup-border: #e0e0e0;
+  --theme-hover: #f5f5f5;
+  --quote-bg: #f5f5f5;
+  --quote-border: #e0e0e0;
+  --warning-border: #ef6c00;
+  --table-border-color: #e0e0e0;
+  --table-header-bg: #eeeeee;
+  --table-alternate-bg: #fafafa;
+  --searchbar-border-color: #b0bec5;
+  --searchbar-bg: #ffffff;
+  --searchbar-fg: #212121;
+  --searchbar-shadow-color: #b0bec5;
+  --searchresults-header-fg: #546e7a;
+  --searchresults-border-color: #e0e0e0;
+  --searchresults-li-bg: #f5f5f5;
+  --search-mark-bg: #ffe082;
+  --color-scheme: light;
+  --overlay-bg: rgba(38, 50, 56, 0.4);
+  --footnote-highlight: #3f51b5;
+  --sidebar-header-border-color: #ffca28;
+}
+
 /* ---------- Dark themes ---------- */
 
 .navy,
 .coal,
-.ayu {
-  --bg: var(--foss-navy);
-  --fg: var(--foss-paper);
-
-  --sidebar-bg: var(--foss-navy-deep);
-  --sidebar-fg: #cfe0f2;
-  --sidebar-non-existant: #7e97b3;
-  --sidebar-active: var(--foss-yellow);
-  --sidebar-spacer: rgba(255, 255, 255, 0.08);
-
-  --scrollbar: #5f7d9e;
-  --icons: #a9c0d8;
-  --icons-hover: var(--foss-yellow);
-  --links: var(--foss-yellow);
-  --inline-code-color: #ffd98a;
-
-  --theme-popup-bg: #102c52;
-  --theme-popup-border: rgba(255, 255, 255, 0.18);
-  --theme-hover: #173a66;
-
+.ayu,
+.nord,
+.everforest,
+.pine {
   --quote-bg: rgba(255, 255, 255, 0.055);
   --quote-border: rgba(255, 255, 255, 0.14);
-  --warning-border: var(--foss-yellow);
-
   --table-border-color: rgba(255, 255, 255, 0.16);
   --table-header-bg: rgba(255, 255, 255, 0.08);
   --table-alternate-bg: rgba(255, 255, 255, 0.035);
-
   --searchbar-border-color: rgba(255, 255, 255, 0.24);
-  --searchbar-bg: #102c52;
-  --searchbar-fg: var(--foss-paper);
+  --searchbar-fg: var(--fg);
   --searchbar-shadow-color: rgba(0, 0, 0, 0.35);
   --searchresults-header-fg: #a9c0d8;
   --searchresults-border-color: rgba(255, 255, 255, 0.16);
   --searchresults-li-bg: rgba(255, 255, 255, 0.045);
-  --search-mark-bg: #9a6f00;
-
   --color-scheme: dark;
   --overlay-bg: rgba(0, 0, 0, 0.55);
-  --footnote-highlight: var(--foss-yellow);
-  --sidebar-header-border-color: var(--foss-yellow);
+  --sidebar-spacer: rgba(255, 255, 255, 0.08);
+  --icons-hover: var(--sidebar-active);
+  --footnote-highlight: var(--sidebar-active);
+  --sidebar-header-border-color: var(--sidebar-active);
+}
+
+/* Navy — the FOSS MEC brand dark theme */
+.navy {
+  --bg: var(--foss-navy);
+  --fg: var(--foss-paper);
+  --sidebar-bg: var(--foss-navy-deep);
+  --sidebar-fg: #cfe0f2;
+  --sidebar-non-existant: #7e97b3;
+  --sidebar-active: var(--foss-yellow);
+  --scrollbar: #5f7d9e;
+  --icons: #a9c0d8;
+  --links: var(--foss-yellow);
+  --inline-code-color: #ffd98a;
+  --theme-popup-bg: #102c52;
+  --theme-popup-border: rgba(255, 255, 255, 0.18);
+  --theme-hover: #173a66;
+  --warning-border: var(--foss-yellow);
+  --searchbar-bg: #102c52;
+  --search-mark-bg: #9a6f00;
+}
+
+/* Coal — neutral charcoal */
+.coal {
+  --bg: #1b1b1b;
+  --fg: #e0e0e0;
+  --sidebar-bg: #121212;
+  --sidebar-fg: #c8c8c8;
+  --sidebar-non-existant: #7a7a7a;
+  --sidebar-active: var(--foss-yellow);
+  --scrollbar: #666666;
+  --icons: #a0a0a0;
+  --links: var(--foss-yellow);
+  --inline-code-color: #ffd98a;
+  --theme-popup-bg: #242424;
+  --theme-popup-border: rgba(255, 255, 255, 0.16);
+  --theme-hover: #2e2e2e;
+  --warning-border: var(--foss-yellow);
+  --searchbar-bg: #2a2a2a;
+  --search-mark-bg: #7a5a00;
+}
+
+/* Ayu — warm dark with amber */
+.ayu {
+  --bg: #0f1419;
+  --fg: #e6e1cf;
+  --sidebar-bg: #0b0f14;
+  --sidebar-fg: #c9c7be;
+  --sidebar-non-existant: #6e7681;
+  --sidebar-active: #ffb454;
+  --scrollbar: #565b66;
+  --icons: #a0a0a0;
+  --links: #ffb454;
+  --inline-code-color: #ffcc66;
+  --theme-popup-bg: #1a1f26;
+  --theme-popup-border: rgba(255, 255, 255, 0.16);
+  --theme-hover: #252b33;
+  --warning-border: #ffb454;
+  --searchbar-bg: #1a1f26;
+  --search-mark-bg: #7a5a00;
+}
+
+/* Nord — arctic blue */
+.nord {
+  --bg: #2e3440;
+  --fg: #eceff4;
+  --sidebar-bg: #242933;
+  --sidebar-fg: #d8dee9;
+  --sidebar-non-existant: #7b88a1;
+  --sidebar-active: #88c0d0;
+  --scrollbar: #4c566a;
+  --icons: #a3be8c;
+  --links: #88c0d0;
+  --inline-code-color: #a3be8c;
+  --theme-popup-bg: #3b4252;
+  --theme-popup-border: rgba(255, 255, 255, 0.18);
+  --theme-hover: #434c5e;
+  --warning-border: #ebcb8b;
+  --searchbar-bg: #3b4252;
+  --search-mark-bg: #5e81ac;
+}
+
+/* Everforest — warm forest green */
+.everforest {
+  --bg: #2d353b;
+  --fg: #d3c6aa;
+  --sidebar-bg: #232a2e;
+  --sidebar-fg: #d3c6aa;
+  --sidebar-non-existant: #859289;
+  --sidebar-active: #a7c080;
+  --scrollbar: #4f585e;
+  --icons: #a7c080;
+  --links: #a7c080;
+  --inline-code-color: #dbbc7f;
+  --theme-popup-bg: #343f44;
+  --theme-popup-border: rgba(255, 255, 255, 0.16);
+  --theme-hover: #3d484d;
+  --warning-border: #dbbc7f;
+  --searchbar-bg: #343f44;
+  --search-mark-bg: #8a7a3a;
+}
+
+/* Pine — deep evergreen and mint */
+.pine {
+  --bg: #1b2a26;
+  --fg: #e6f0e8;
+  --sidebar-bg: #14201d;
+  --sidebar-fg: #c9ddd2;
+  --sidebar-non-existant: #6f8f80;
+  --sidebar-active: #7fd1ae;
+  --scrollbar: #3f5a50;
+  --icons: #9fc7b6;
+  --links: #7fd1ae;
+  --inline-code-color: #f0c674;
+  --theme-popup-bg: #22332e;
+  --theme-popup-border: rgba(255, 255, 255, 0.16);
+  --theme-hover: #2c443c;
+  --warning-border: #f0c674;
+  --searchbar-bg: #22332e;
+  --search-mark-bg: #6b5a2a;
 }
 
 /* ---------- Base typography ---------- */
@@ -257,10 +430,10 @@ pre code {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  padding: 3px;
-  border-radius: 6px;
+  width: 34px;
+  height: 34px;
+  padding: 4px;
+  border-radius: 7px;
   background: #ffffff;
 }
 
@@ -303,6 +476,19 @@ pre code {
   .foss-brandbar {
     font-size: 1.05rem;
   }
+}
+
+/* On mobile mdBook slides the page aside to reveal the sidebar. Hide the brand
+   strip in that state so the visible sliver shows the menu bar, not clipped text. */
+@media only screen and (max-width: 619px) {
+  #mdbook-sidebar-toggle-anchor:checked ~ #mdbook-page-wrapper .foss-brandbar {
+    display: none;
+  }
+}
+
+.theme-popup {
+  max-height: calc(100vh - var(--menu-bar-height) - 12px);
+  overflow-y: auto;
 }
 
 /* ---------- Home page components ---------- */
@@ -483,23 +669,17 @@ pre code {
   color: var(--links);
 }
 
-.navy .card,
-.coal .card,
-.ayu .card {
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .card {
   border-color: rgba(255, 255, 255, 0.16);
   background: rgba(255, 255, 255, 0.045);
 }
 
-.navy .card:hover,
-.coal .card:hover,
-.ayu .card:hover {
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .card:hover {
   border-color: var(--foss-yellow);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
 
-.navy .eyebrow,
-.coal .eyebrow,
-.ayu .eyebrow {
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .eyebrow {
   color: #a9c0d8;
 }
 
@@ -531,18 +711,18 @@ pre code {
 .fmt-game { color: #7e22ce; }
 .fmt-event { color: #a16207; }
 
-.navy .fmt-notes, .coal .fmt-notes, .ayu .fmt-notes { color: #6ee7b7; }
-.navy .fmt-pdf, .coal .fmt-pdf, .ayu .fmt-pdf { color: #fca5a5; }
-.navy .fmt-slides, .coal .fmt-slides, .ayu .fmt-slides { color: #fcd34d; }
-.navy .fmt-docs, .coal .fmt-docs, .ayu .fmt-docs { color: #93c5fd; }
-.navy .fmt-book, .coal .fmt-book, .ayu .fmt-book { color: #c4b5fd; }
-.navy .fmt-video, .coal .fmt-video, .ayu .fmt-video { color: #f9a8d4; }
-.navy .fmt-repo, .coal .fmt-repo, .ayu .fmt-repo { color: #cbd5e1; }
-.navy .fmt-course, .coal .fmt-course, .ayu .fmt-course { color: #5eead4; }
-.navy .fmt-tool, .coal .fmt-tool, .ayu .fmt-tool { color: #cbd5e1; }
-.navy .fmt-practice, .coal .fmt-practice, .ayu .fmt-practice { color: #fdba74; }
-.navy .fmt-game, .coal .fmt-game, .ayu .fmt-game { color: #d8b4fe; }
-.navy .fmt-event, .coal .fmt-event, .ayu .fmt-event { color: #fde047; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-notes { color: #6ee7b7; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-pdf { color: #fca5a5; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-slides { color: #fcd34d; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-docs { color: #93c5fd; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-book { color: #c4b5fd; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-video { color: #f9a8d4; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-repo { color: #cbd5e1; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-course { color: #5eead4; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-tool { color: #cbd5e1; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-practice { color: #fdba74; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-game { color: #d8b4fe; }
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .fmt-event { color: #fde047; }
 
 table {
   font-size: 1.5rem;
@@ -570,9 +750,7 @@ table th {
   margin: 0.35rem 0;
 }
 
-.navy .contribute-band,
-.coal .contribute-band,
-.ayu .contribute-band {
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .contribute-band {
   border-color: rgba(255, 255, 255, 0.16);
   border-left-color: var(--foss-yellow);
 }
@@ -614,9 +792,7 @@ table th {
   color: var(--foss-muted);
 }
 
-.navy .small-note,
-.coal .small-note,
-.ayu .small-note {
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .small-note {
   color: #a9c0d8;
 }
 
@@ -663,9 +839,7 @@ table th {
   letter-spacing: -0.02em;
 }
 
-.navy .menu-title,
-.coal .menu-title,
-.ayu .menu-title {
+:is(.navy, .coal, .ayu, .nord, .everforest, .pine) .menu-title {
   color: var(--foss-paper);
 }
 

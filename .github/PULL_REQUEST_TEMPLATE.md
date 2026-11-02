@@ -21,7 +21,7 @@
 
 ## Authorship and permission
 
-- **Author / credit name:**
+- **Author / credit name:** <!-- This is the name a maintainer will add to the Contributors page after merge. -->
 - **Source or references:**
 - **Licence or permission:**
 
