@@ -393,6 +393,8 @@ pre code {
 }
 
 .foss-brandbar {
+  position: relative;
+  z-index: 30;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -419,6 +421,8 @@ pre code {
 }
 
 .foss-brandbar__brand {
+  position: relative;
+  z-index: 31;
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -426,7 +430,14 @@ pre code {
   white-space: nowrap;
 }
 
+.foss-brandbar__links {
+  position: relative;
+  z-index: 31;
+}
+
 .foss-brandbar__logo {
+  position: relative;
+  z-index: 32;
   display: inline-flex;
   align-items: center;
   justify-content: center;

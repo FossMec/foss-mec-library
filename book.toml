@@ -10,7 +10,7 @@ build-dir = "book"
 create-missing = false
 
 [output.html]
-default-theme = "light"
+default-theme = "navy"
 preferred-dark-theme = "navy"
 no-section-label = true
 smart-punctuation = true
