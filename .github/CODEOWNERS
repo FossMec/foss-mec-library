@@ -1,0 +1,4 @@
+# Default owner for the library. The account below is an organisation admin and
+# repository maintainer. Replace or extend this with the FOSS MEC maintainers
+# team once that team exists and has repository access.
+* @dijith-481

@@ -1,0 +1,28 @@
+[book]
+title = "FOSS MEC Library"
+authors = ["FOSS MEC Contributors"]
+description = "Open notes, study materials, learning resources and community guides from FOSS MEC."
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+no-section-label = true
+smart-punctuation = true
+additional-css = ["theme/foss-mec.css"]
+git-repository-url = "https://github.com/FossMec/foss-mec-library"
+edit-url-template = "https://github.com/FossMec/foss-mec-library/edit/main/{path}"
+site-url = "/foss-mec-library/"
+
+[output.html.search]
+enable = true
+limit-results = 30
+
+[output.html.fold]
+enable = true
+level = 1

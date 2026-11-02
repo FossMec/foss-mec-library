@@ -1,0 +1,101 @@
+name: Suggest a resource
+description: Propose a free, authoritative external resource for the library.
+title: "[Resource]: "
+labels: ["resource suggestion", "needs review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a resource. The library only lists free, official or openly
+        licensed material, linked at its canonical source. Please check that the link is not
+        already in the directory before submitting.
+
+  - type: input
+    id: resource-title
+    attributes:
+      label: Resource title
+      description: The title shown on the destination page.
+      placeholder: "Pro Git, 2nd edition"
+    validations:
+      required: true
+
+  - type: input
+    id: canonical-url
+    attributes:
+      label: Canonical URL
+      description: Link to the original author, project or institution — not a mirror, shortener or aggregator.
+      placeholder: "https://git-scm.com/book/en/v2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic or course
+      description: Where should this resource be listed?
+      options:
+        - Git and GitHub
+        - Linux and the command line
+        - Programming
+        - Open source and self-learning
+        - Academic subject
+        - Workshop / contribution guide
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: subject
+    attributes:
+      label: Subject, semester or audience
+      description: If this is academic material, give the semester, course and topic.
+      placeholder: "Semester 1 — Mathematics I — limits and continuity"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One or two sentences explaining what the resource teaches and who it is for.
+      placeholder: "A free book covering repositories, branching and remotes, with worked examples."
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source or author
+      description: Who maintains or wrote the resource?
+      placeholder: "Scott Chacon and Ben Straub; Git project"
+    validations:
+      required: true
+
+  - type: input
+    id: licence
+    attributes:
+      label: Access and licence
+      description: State whether it is free, and the licence or access terms.
+      placeholder: "Free online; CC BY-NC-SA 3.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it belong in the library?
+      description: What gap does it fill compared with existing entries? Is it beginner-friendly and current?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: The resource is free to access without a paywall, trial or misleading login.
+          required: true
+        - label: The URL is the canonical source, not a mirror or affiliate link.
+          required: true
+        - label: I have read the contribution guide and content rules.
+          required: true
